@@ -13,17 +13,13 @@ export default function Form() {
 
   const handleFormSubmit = async (e: FormEvent) => {
     e.preventDefault();
+
     const data = {
       email: emailRef.current?.value,
       name: nameRef.current?.value,
     };
 
-    if (emailRef.current?.value === "" && nameRef.current?.value === "") {
-      setMessage({
-        messsage: "os campos devem ser preenchidos",
-        cssClass: "text-red-900 bg-red-100 border-red-400",
-      });
-    } else {
+    if (emailRef.current?.value !== "" && nameRef.current?.value !== "") {
       const subscriber = await axios
         .post("/api/signup", data)
         .then((success) => {
@@ -33,6 +29,11 @@ export default function Form() {
             cssClass: "text-green-900 bg-green-100 border-green-400",
           });
         });
+    } else {
+      setMessage({
+        messsage: "Os campos devem ser preenchidos",
+        cssClass: "text-red-900 bg-red-100 border-red-400",
+      });
     }
   };
   return (
@@ -43,13 +44,10 @@ export default function Form() {
         <Video />
         <div className="p-2">
           <h2 className="text-xl font-semibold text-gray-900 my-3">
-            Inscreva-se é rapidinho
+            Inscreva-se é rapidinho.
           </h2>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae
-            temporibus non ea
-          </p>
-          <form className="flex flex-col py-4">
+          <p>Preencha os campos abaixo e borá meter a mão na massa.</p>
+          <form className="flex flex-col py-4" onSubmit={handleFormSubmit}>
             <div className="mb-3 border-2 border-gray-400 rounded-md">
               <input
                 type="text"
@@ -70,7 +68,6 @@ export default function Form() {
             </div>
             <div>
               <button
-                onClick={handleFormSubmit}
                 type="submit"
                 className="bg-gray-900 text-white font-semibold uppercase text-center p-4 w-full"
               >
