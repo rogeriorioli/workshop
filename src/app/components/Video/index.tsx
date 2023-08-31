@@ -5,7 +5,7 @@ import styles from "./styles.module.css";
 const Video: React.FC = () => {
   return (
     <div className={styles.videoContainer}>
-      <video className="video" src="/chamada_ws.mov" controls></video>
+      <video className="video" src="/chamada_ws.mov" controls autoPlay></video>
     </div>
   );
 };
