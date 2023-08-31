@@ -25,6 +25,7 @@ export async function POST(req: NextRequest) {
     }
     return NextResponse.json({
       message: `Seu email ${body.email} já esta inscrito nos vemos lá`,
+      ...subscriberExists,
     });
   }
 }
