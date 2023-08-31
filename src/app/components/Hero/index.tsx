@@ -2,7 +2,7 @@ import Form from "../Form";
 
 export default function Hero() {
   return (
-    <div className="relative  bg-gray-900 pb-24 pt-3 sm:pb-32 ">
+    <div className="relative bg-gray-900 pb-24 pt-3 sm:pb-32 ">
       <div className="logo sm:py-12 px-11  flex items-center justify-center w-full my-4 lg:justify-start">
         <div>
           <svg

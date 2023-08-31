@@ -1,13 +1,44 @@
-import React from "react";
+"use client";
+import React, { FormEvent, useRef, useState } from "react";
 
 import styles from "./styles.module.css";
 import Video from "../Video";
+import axios from "axios";
+import Message, { MessageProps } from "../Message";
 
 export default function Form() {
+  const [message, setMessage] = useState<MessageProps>();
+  const nameRef = useRef<HTMLInputElement | null>(null);
+  const emailRef = useRef<HTMLInputElement | null>(null);
+
+  const handleFormSubmit = async (e: FormEvent) => {
+    e.preventDefault();
+    const data = {
+      email: emailRef.current?.value,
+      name: nameRef.current?.value,
+    };
+
+    if (emailRef.current?.value === "" && nameRef.current?.value === "") {
+      setMessage({
+        messsage: "os campos devem ser preenchidos",
+        cssClass: "text-red-900 bg-red-100 border-red-400",
+      });
+    } else {
+      const subscriber = await axios
+        .post("/api/signup", data)
+        .then((success) => {
+          const { data } = success;
+          setMessage({
+            messsage: data.message,
+            cssClass: "text-green-900 bg-green-100 border-green-400",
+          });
+        });
+    }
+  };
   return (
     <div className="relative">
       <div
-        className={`lg:absolute lg:mt-0 mt-10 shadow-md p-2  bg-gray-100 ${styles.absoluteContainer}`}
+        className={`lg:absolute lg:mt-0 mt-10 shadow-md p-2 bg-gray-100 ${styles.absoluteContainer}`}
       >
         <Video />
         <div className="p-2">
@@ -22,24 +53,35 @@ export default function Form() {
             <div className="mb-3 border-2 border-gray-400 rounded-md">
               <input
                 type="text"
+                name="name"
+                ref={nameRef}
                 placeholder="Seu Nome"
                 className="w-full p-2 outline-0 focus:outline-none rounded-md"
               />
             </div>
             <div className="mb-3 border-2 border-gray-400">
               <input
-                type="text"
+                name="email"
+                type="email"
+                ref={emailRef}
                 placeholder="email@servidor.com.br"
                 className="w-full p-2 outline-0 focus:outline-none"
               />
             </div>
             <div>
               <button
+                onClick={handleFormSubmit}
                 type="submit"
                 className="bg-gray-900 text-white font-semibold uppercase text-center p-4 w-full"
               >
                 Inscreva-se
               </button>
+              {message && (
+                <Message
+                  messsage={message.messsage}
+                  cssClass={message.cssClass}
+                />
+              )}
             </div>
           </form>
         </div>
