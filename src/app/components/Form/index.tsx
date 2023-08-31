@@ -7,7 +7,7 @@ export default function Form() {
   return (
     <div className="relative">
       <div
-        className={`absolute bg-white shadow-md p-2 ${styles.absoluteContainer}`}
+        className={`lg:absolute lg:mt-0 mt-10 shadow-md p-2  bg-gray-100 ${styles.absoluteContainer}`}
       >
         <Video />
         <div className="p-2">
