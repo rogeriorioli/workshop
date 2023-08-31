@@ -2,22 +2,22 @@ const features = [
   {
     name: "Next Js",
     description:
-      "Morbi viverra dui mi arcu sed. Tellus semper adipiscing suspendisse semper morbi. Odio urna massa nunc massa.",
+      "O Next.js é um framework React que não apenas simplifica o desenvolvimento, mas também oferece recursos avançados que tornarão nossa Landing Page altamente performática e amigável tanto para os usuários quanto para os mecanismos de busca.",
   },
   {
     name: "Tailwind CSS",
     description:
-      "Sit quis amet rutrum tellus ullamcorper ultricies libero dolor eget. Sem sodales gravida quam turpis enim lacus amet.",
+      "Na criação da nossa Landing Page, aproveitaremos o poder e a eficiência do Tailwind CSS para dar estilo e vida ao nosso design. O Tailwind CSS é uma ferramenta inovadora que nos permitirá construir uma interface atraente e responsiva de maneira ágil e simplificada",
   },
   {
     name: "Prisma e PostgresSQL",
     description:
-      "Quisque est vel vulputate cursus. Risus proin diam nunc commodo. Lobortis auctor congue commodo diam neque.",
+      "Para tornar nossa Landing Page dinâmica, precisamos armazenar e exibir informações específicas, como depoimentos de clientes ou produtos em destaque. Para isso, vamos utilizar o Prisma, uma ferramenta ORM (Object-Relational Mapping) que simplifica a interação com bancos de dados.",
   },
   {
     name: "Vercel",
     description:
-      "Arcu egestas dolor vel iaculis in ipsum mauris. Tincidunt mattis aliquet hac quis. Id hac maecenas ac donec pharetra eget.",
+      "Agora que a Landing Page está pronta, é hora de compartilhá-la com o mundo. A Vercel oferece hospedagem gratuita e rápida para projetos Next.js. Conecte seu repositório do GitHub à Vercel e implante sua Landing Page com apenas alguns cliques.",
   },
 ];
 
