@@ -45,26 +45,6 @@ export default function Hero() {
           <p className="my-8 text-gray-300 text-3xl font-bold">
             Nos dias : 02/10/2023 à 08/10/2023
           </p>
-          <a
-            className="mt-6 text-xl font-semibold leading-8 text-gray-900 flex items-center justify-center bg-gray-100 p-4 w-[300px] rounded-xl"
-            href="https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=NzY5dDhycWRqZmVjZGlsODE0bzU0cWJ0M3Qgcm9nZXJpb0BkZXNpZ25ob3BlLmNvbS5icg&tmsrc=rogerio%40designhope.com.br"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={1.5}
-              stroke="currentColor"
-              className="w-6 h-6 mr-2"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5"
-              />
-            </svg>
-            Adicionar na agenda
-          </a>
         </div>
         <div className="lg:w-1/3 h-2/6">
           <Form />
