@@ -1,4 +1,5 @@
 import "./globals.css";
+import Head from "next/head";
 import type { Metadata } from "next";
 import { Raleway } from "next/font/google";
 
@@ -9,8 +10,17 @@ export const metadata: Metadata = {
   description: `Workshop mão na massa!
 Desenvolvendo LandingPages 
 com Next Js, Prisma  e 
-persistindo todos os dados dos  
+persistindo todos os dados dos    
 Leads com PostgresSql `,
+  openGraph: {
+    images: ["/ogimage.png"],
+    title: "designhope | Workshop",
+    description: `Workshop mão na massa!
+Desenvolvendo LandingPages 
+com Next Js, Prisma  e 
+persistindo todos os dados dos    
+Leads com PostgresSql `,
+  },
 };
 
 export default function RootLayout({

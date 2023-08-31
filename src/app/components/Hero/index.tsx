@@ -43,11 +43,11 @@ export default function Hero() {
             todos os dados dos Leads com PostgresSql
           </p>
           <p className="my-8 text-gray-300 text-3xl font-bold">
-            DIA: 07/06/2023
+            Nos dias : 02/10/2023 à 08/10/2023
           </p>
           <a
             className="mt-6 text-xl font-semibold leading-8 text-gray-900 flex items-center justify-center bg-gray-100 p-4 w-[300px] rounded-xl"
-            href="https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=NzduY2NtNzF1MDhuMGcwdG9wcWdoNGRyMWEgcm9nZXJpb0BkZXNpZ25ob3BlLmNvbS5icg&tmsrc=rogerio%40designhope.com.br"
+            href="https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=NzY5dDhycWRqZmVjZGlsODE0bzU0cWJ0M3Qgcm9nZXJpb0BkZXNpZ25ob3BlLmNvbS5icg&tmsrc=rogerio%40designhope.com.br"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
