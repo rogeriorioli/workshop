@@ -10,6 +10,7 @@ export type MessageProps = {
 const Message = ({ messsage, cssClass }: MessageProps) => {
   return (
     <div
+      role="message"
       className={`${cssClass} font-bold p-4 mt-2 text-center rounded-md border-2`}
     >
       {messsage}
