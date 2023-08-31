@@ -63,13 +63,13 @@ export default function Form() {
                 type="email"
                 ref={emailRef}
                 placeholder="email@servidor.com.br"
-                className="w-full p-2 outline-0 focus:outline-none"
+                className="w-full p-2 outline-0 focus:outline-none rounded-md"
               />
             </div>
             <div>
               <button
                 type="submit"
-                className="bg-gray-900 text-white font-semibold uppercase text-center p-4 w-full"
+                className="bg-gray-900 hover:bg-gray-700 transition-all text-white font-semibold uppercase text-center p-4 w-full"
               >
                 Inscreva-se
               </button>

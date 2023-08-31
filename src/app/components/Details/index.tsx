@@ -56,8 +56,8 @@ export default function Details() {
         </div>
         <div className="flex justify-center items-center my-6">
           <a
-            className="w-56 p-4 text-white font-semibold text-center bg-gray-900"
-            href=""
+            className="w-56 p-4 text-white font-semibold text-center bg-gray-900  hover:bg-gray-700 transition-all"
+            href="#"
           >
             INSCREVA-SE
           </a>

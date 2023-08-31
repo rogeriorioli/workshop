@@ -35,6 +35,9 @@ export default function Hero() {
       />
       <div className="mx-auto max-w-7xl p-4 flex flex-col lg:flex-row">
         <div className="lg:w-3/5 ">
+          <p className="text-1xl font-bold tracking-tight text-white">
+            Evento online e gratuito.
+          </p>
           <h2 className="text-2xl font-bold tracking-tight text-white sm:text-5xl">
             Workshop Mão na massa!
           </h2>
