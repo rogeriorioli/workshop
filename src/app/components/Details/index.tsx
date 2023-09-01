@@ -51,7 +51,7 @@ export default function Details() {
             <a href="" className="font-semibold">
               Vercel
             </a>{" "}
-            totalemente Gratuito!
+            totalmente Gratuito!
           </p>
         </div>
         <div className="flex justify-center items-center my-6">
