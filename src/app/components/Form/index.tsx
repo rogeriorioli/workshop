@@ -48,7 +48,7 @@ export default function Form() {
           </h2>
           <p>Preencha os campos abaixo e borá meter a mão na massa.</p>
           <form className="flex flex-col py-4" onSubmit={handleFormSubmit}>
-            <div className="mb-3 border-2 border-gray-400 rounded-md">
+            <div className="mb-3 border-2 border-gray-400 rounded-md focus-within:border-gray-900">
               <input
                 type="text"
                 name="name"
@@ -57,13 +57,13 @@ export default function Form() {
                 className="w-full p-2 outline-0 focus:outline-none rounded-md"
               />
             </div>
-            <div className="mb-3 border-2 border-gray-400">
+            <div className="mb-3 border-2 border-gray-400 rounded-md focus-within:border-gray-900">
               <input
                 name="email"
                 type="email"
                 ref={emailRef}
                 placeholder="email@servidor.com.br"
-                className="w-full p-2 outline-0 focus:outline-none rounded-md"
+                className="w-full p-2 outline-0 focus:outline-none rounded-md "
               />
             </div>
             <div>
