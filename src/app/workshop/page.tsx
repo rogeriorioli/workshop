@@ -17,8 +17,8 @@ const Workshop = () => {
       content: [
         {
           key: 1,
-          title: "Instalando as ferramentas nescessárias",
-          videoId: "xLhR0kdPcWQ",
+          title: "Sobre o Projeto  e ferramentas nescessárias",
+          videoId: "MOj9kVGa9X4",
         },
         {
           key: 2,
@@ -113,22 +113,58 @@ const Workshop = () => {
                 configuração no cloud da Vercel totalmente Gratuito!
               </p>
             </div>
-            <div className="w-1/3">
-              <h2 className="text-2xl text-white font-semibold">
-                Material de Apoio
-              </h2>
+            <div className="w-full border-b-2 ">
+              <h2 className="text-2xl text-white font-semibold">Descrição</h2>
             </div>
+            <p className="font-bold mt-2 text-white">
+              Links importantes e dowloads
+            </p>
+            <ul className="p-8 text-white list-disc ">
+              <li>
+                <a href="https://nodejs.org/en" target="_blank">
+                  NodeJs
+                </a>
+              </li>
+              <li>
+                <a href="https://nextjs.org/" target="_blank">
+                  NextJs
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://tailwindcss.com/docs/installation"
+                  target="_blank"
+                >
+                  Tailwindcss
+                </a>
+              </li>
+              <li>
+                <a href="https://www.prisma.io/" target="_blank">
+                  Prisma
+                </a>
+              </li>
+              <li>
+                <a
+                  className="font-bold"
+                  href="https://www.figma.com/file/tlh16AMGiXejZ4xkSJgfzg/designhope-worshop?type=design&node-id=502%3A51&mode=design&t=eZOEGkMBEBTulBoO-1"
+                  target="_blank"
+                >
+                  FIGMA DO PROJETO
+                </a>
+              </li>
+            </ul>
           </div>
-          <div className="w-full border-b-2 ">
+
+          <div className="w-full border-b-2 mb-8 ">
             <h2 className="text-2xl text-white font-semibold">Ajuda</h2>
           </div>
           <DiscussionEmbed
-            shortname="example"
+            shortname="designhope-workshop"
             config={{
               url: "https://workshop-pearl.vercel.app/worskhop",
-              identifier: "DESIGNHOPE WORKSHOP",
+              identifier: "1",
               title: "DESIGNHOPE WORKSHOP",
-              language: "pt",
+              language: "pt_BR",
             }}
           />
         </div>

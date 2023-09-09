@@ -14,7 +14,7 @@ interface VideoProviderProps {
 }
 
 export default function VideoProvider({ children }: VideoProviderProps) {
-  const [videoId, setVideoId] = useState<string>("xLhR0kdPcWQ"); // Initialize with an empty string
+  const [videoId, setVideoId] = useState<string>("XaMKRUka0nA");
 
   return (
     <VideoContext.Provider value={{ videoId, setVideoId }}>
