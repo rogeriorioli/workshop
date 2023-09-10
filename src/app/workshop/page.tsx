@@ -18,7 +18,7 @@ const Workshop = () => {
         {
           key: 1,
           title: "Sobre o Projeto  e ferramentas nescessárias",
-          videoId: "MOj9kVGa9X4",
+          videoId: "XaMKRUka0nA",
         },
         {
           key: 2,

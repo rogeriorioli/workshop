@@ -17,6 +17,7 @@ const Accordeon = ({ title, content }: AccordionProps) => {
   const contentElement = useRef(null);
 
   const handleVideo = async (id: string) => {
+    window.localStorage.setItem("lastplay", id);
     setVideoId(id);
   };
 
@@ -45,7 +46,7 @@ const Accordeon = ({ title, content }: AccordionProps) => {
           <ul className="p-2">
             {content.map((item, i) => (
               <li
-                className={`list-disc p-2 cursor-pointer hover:font-medium ${
+                className={`list-disc p-2 cursor-pointer hover:font-medium  text-sm ${
                   item.videoId === `${videoId}` && "font-bold underline"
                 }`}
                 key={item.key}
