@@ -114,7 +114,9 @@ const Workshop = () => {
               </p>
             </div>
             <div className="w-full border-b-2 ">
-              <h2 className="text-2xl text-white font-semibold">Descrição</h2>
+              <h2 className="text-2xl text-white font-semibold">
+                Material de Apoio
+              </h2>
             </div>
             <p className="font-bold mt-2 text-white">
               Links importantes e dowloads
@@ -150,6 +152,11 @@ const Workshop = () => {
                   target="_blank"
                 >
                   FIGMA DO PROJETO
+                </a>
+              </li>
+              <li>
+                <a className="font-bold" href="/assets.zip" target="_blank">
+                  IMAGENS DO PROJETO
                 </a>
               </li>
             </ul>
