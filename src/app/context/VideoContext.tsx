@@ -27,7 +27,7 @@ export default function VideoProvider({ children }: VideoProviderProps) {
     if (lastVideoPlayed) {
       setVideoId(lastVideoPlayed);
     } else {
-      setVideoId("XaMKRUka0nA");
+      setVideoId("YP7cZwdHmp8");
     }
   }, []);
   return (

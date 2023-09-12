@@ -7,7 +7,6 @@ import VideoProvider from "../context/VideoContext";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { DiscussionEmbed } from "disqus-react";
-import Head from "next/head";
 const Workshop = () => {
   const [user, setUser] = useState<UserDto>();
 
@@ -18,7 +17,7 @@ const Workshop = () => {
         {
           key: 1,
           title: "Sobre o Projeto  e ferramentas nescessárias",
-          videoId: "XaMKRUka0nA",
+          videoId: "YP7cZwdHmp8",
         },
         {
           key: 2,
