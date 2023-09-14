@@ -7,6 +7,7 @@ import VideoProvider from "../context/VideoContext";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { DiscussionEmbed } from "disqus-react";
+import BuyCoffee from "../components/BuyCoffee";
 const Workshop = () => {
   const [user, setUser] = useState<UserDto>();
 
@@ -81,14 +82,14 @@ const Workshop = () => {
   return (
     <Authenticated>
       <Header username={`Olá,  ${user?.name}`} />
-      <div className="bg-gray-900 flex items-center flex-col ">
+      <div className="bg-gray-900 flex items-center flex-col p-4 ">
         <VideoProvider>
           <div className="flex flex-row justify-center items-center my-8 w-full">
-            <div className="container flex flex-row">
-              <div className="w-3/4">
+            <div className="container flex flex-col lg:flex-row">
+              <div className="lg:w-3/4">
                 <Player />
               </div>
-              <div className="w-3/12 min-h-min bg-white ">
+              <div className="lg:w-3/12 min-h-min bg-white ">
                 {data.map((item, i) => (
                   <Accordeon
                     key={i}
@@ -159,9 +160,10 @@ const Workshop = () => {
                 </a>
               </li>
             </ul>
+            <BuyCoffee />
           </div>
 
-          <div className="w-full border-b-2 mb-8 ">
+          <div className="w-full border-b-2 my-8  ">
             <h2 className="text-2xl text-white font-semibold">Ajuda</h2>
           </div>
           <DiscussionEmbed

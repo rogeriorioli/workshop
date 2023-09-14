@@ -1,3 +1,4 @@
+import BuyCoffee from "../BuyCoffee";
 import Form from "../Form";
 
 export default function Hero() {
@@ -50,6 +51,7 @@ export default function Hero() {
           <p className="my-8 text-gray-300 text-3xl font-bold">
             Nos dias : 02/10/2023 à 08/10/2023
           </p>
+          <BuyCoffee />
         </div>
         <div className="lg:w-1/3 h-2/6">
           <Form />

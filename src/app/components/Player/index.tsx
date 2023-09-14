@@ -5,8 +5,8 @@ const Player = () => {
   return (
     <div>
       <iframe
+        className="aspect-video"
         width="100%"
-        height="724"
         src={`https://www.youtube.com/embed/${videoId}`}
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share fullscreen"
         allowFullScreen

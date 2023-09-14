@@ -43,6 +43,6 @@ export function useVideo() {
   if (!context) {
     throw new Error("useVideo must be used within a VideoProvider");
   }
-
+  console.log(context);
   return context;
 }
