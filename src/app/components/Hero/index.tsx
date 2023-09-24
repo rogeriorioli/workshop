@@ -49,7 +49,7 @@ export default function Hero() {
             todos os dados dos Leads com PostgresSql
           </p>
           <p className="my-8 text-gray-300 text-3xl font-bold">
-            Nos dias : 02/10/2023 à 08/10/2023
+            Nos dias : 06/11/2023 à 10/11/2023
           </p>
           <BuyCoffee />
         </div>

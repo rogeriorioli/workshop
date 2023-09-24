@@ -1,5 +1,4 @@
 import "./globals.css";
-import Head from "next/head";
 import type { Metadata } from "next";
 import { Raleway } from "next/font/google";
 
