@@ -1,9 +1,18 @@
+'use client'
+import { useRouter } from "next/navigation";
 import React from "react";
 
 type Props = {
   username: string;
 };
 const Header = ({ username }: Props) => {
+  const router = useRouter();
+
+  const logout = () => {
+      localStorage.removeItem('user')
+     router.push("/login");
+  }
+
   return (
     <header className="bg-black py-5 px-4 w-full sticky">
       <div className="container mx-auto flex flex-row justify-between items-center sticky">
@@ -35,7 +44,10 @@ const Header = ({ username }: Props) => {
             </a>
           </div>
         </div>
-        <div className="text-white capitalize">{username}</div>
+        <div className="text-white capitalize relative">
+          {username}, <button className="p-2
+           bg-white text-black w-28  rounded-md" onClick={logout}>Sair</button>
+          </div>
       </div>
     </header>
   );
